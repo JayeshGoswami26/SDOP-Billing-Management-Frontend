@@ -1,0 +1,19 @@
+/* Play Pause Toggle Button starts */
+input[type="checkbox"]:checked + .toggle-label .cont-label-play {
+    background: #f43f5e;
+    transform: translateX(50px);
+  }
+  
+  .toggle-label .cont-label-play {
+    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+  }
+  
+  .toggle-label .label-play {
+    clip-path: polygon(25% 0, 75% 50%, 25% 100%, 25% 51%);
+  }
+  
+  input[type="checkbox"]:checked + .toggle-label .label-play {
+    width: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  /* Play Pause Toggle Button ends */
